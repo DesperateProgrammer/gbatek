@@ -82278,6 +82278,20 @@ VDD, instead it goes to a capacitor (0.1uF min) "for internal power stability".
        VDD28       GND         CAM_LED     PWSWO       mFE         /mRST
        GND         AOUT        mFE'(R79)   WL_RXPE     /IRQ_O      GND
 ```
+<span style="color:red">
+Note: This does match the pinout (with 90° rotated print/marking) of the 36-FLGA version of Renesas
+µPD78F050xA series.
+Rotated to match the pins above, but with marking as on the renesas branded chip:
+
+```
+	o		N.C.         P3.2        P3.0        SDA0        P3.3        N.C.
+			P3.1/INTP    P1.6        P1.5        SCL0        eVdd        eVss(Gnd)
+			P1.7         P1.4        P1.3        P0.0        Vdd         P12.1
+			P1.1         P1.2        P1.0        REGC(Cap)   Vss(Gnd)    Vss(GND)
+			AVref        AVss        P2.2        P2.1        FLMD0       /RESET
+			N.C.         P2.3/ANI3   P2.0        P0.1        P12.0       N.C.
+```
+</span>
 
 
 
